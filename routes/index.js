@@ -12,6 +12,10 @@ router.get('/', (req, res) => {
 router.get('/api/blog-stats', middleware.axiosMiddleware, blogControllers.blogStats);
 router.get('/api/blog-search', middleware.axiosMiddleware, blogControllers.searchBlogs);
 
+router.get('/*', (req, res) => {
+    res.status(400).json({success: false, message: "Route not found"});
+});
+
 
 
 

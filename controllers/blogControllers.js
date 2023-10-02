@@ -11,6 +11,8 @@ module.exports.blogStats = async function(req, res) {
         const privacyBlogs = blogData.blogs.filter(blog => blog.title.toLowerCase().includes('privacy'))
         const uniqueTitles = _.uniqBy(blogData.blogs, 'title');
 
+        console.log(totalBlogs);
+
         return res.status(200).json({
             success: true,
             message: "Blogs fetched successfully",
@@ -37,6 +39,8 @@ module.exports.searchBlogs = async function(req, res) {
         }
         const blogs = req.blogData.blogs;
         const searchResults = blogs.filter((blog) => blog.title.toLowerCase().includes(query.toLowerCase()));
+
+        console.log(searchResults);
 
         return res.status(200).json({
             success: true,
