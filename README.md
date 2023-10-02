@@ -16,14 +16,24 @@ This backend application is built using Node.js and Express.js. It leverages Axi
 ## Blog API Documentation
 
 1. Get Blog Stats
-Endpoint: /api/blog-stats
-Method: GET
-Curl: curl -X GET https://blog-analytics-azsa.onrender.com/api/blog-stats
+   
+    Endpoint: /api/blog-stats
+
+    Method: GET
+
+    Curl: curl -X GET https://blog-analytics-azsa.onrender.com/api/blog-stats
+
+    ![Stats](/stats.png)
 
 2. Blog Search
-Endpoint: /api/blog-search
-Method: GET
-Curl: curl -X GET https://blog-analytics-azsa.onrender.com/api/blog-search?query=office
+
+    Endpoint: /api/blog-search
+
+    Method: GET
+  
+    Curl: curl -X GET https://blog-analytics-azsa.onrender.com/api/blog-search?query=value
+
+    ![Search](/search.png)
 
 
 
